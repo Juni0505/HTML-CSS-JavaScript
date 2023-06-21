@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>메인페이지</title>
+</head>
+
+<body>
+  <header>
+    <div><img src="/resources/images/레드향.jpeg"></div>
+    <div>
+      <form action="/학원 강의/20230619_search_do.html" method="get">
+        <fieldset>
+          <legend>it관련</legend>
+           <input type="checkbox" name="it" value="java" id="javaid"><label for="javaid">Java</label>
+          <input type="checkbox" name="it" value="c#"><label>C#</label>
+          <input type="checkbox" name="it" value="sql"><label>SQL</label>
+      </fieldset>
+      <fieldset>
+        <legend>수험서</legend>
+        <input type="checkbox" name="sub" value="info"><label>정보처리기사</label>
+        <input type="checkbox" name="sub" value="sqld"><label>SQLD</label>
+        <input type="checkbox" name="sub" value="security"><label>정보보안기사</label>
+      </fieldset>
+        <input type="text" name="word" value="">
+        <button type="submit">텍스트와</button>
+        <input type="submit" value="텍스트만 작성가능">
+        <input type="button" value="type button은 js에서 활용">
+        <input type="reset" value="form태그내부사용자입니다.">
+      </form>
+    </div>
+  </header>
+  <div id="wrap_content">
+    <section>
+      <form action="./20230619.html" method="post">
+        <input type="file" name="uploadfile">
+        <button type="submit">파일 전달</button>
+      </form>
+    </section>
+    <aside>
+      <form action="./20230619_login_check_do.html" method="get">
+        <input type="hidden" name="hidd" value="hvalue">
+        <table>
+          <tbody>
+            <tr>
+              <th><label for="idid">id</label></th>
+              <td><input type="text" name="idd" maxlength="10" id="idid"></td>
+              <td rowspan="2"><button type="submit">로그인</button></td>
+            </tr>
+            <tr>
+              <td><lable>password</lable></td>
+              <td> <input type="password" name="pwd"></td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </aside>
+  </div>
+</body>
+</html>
