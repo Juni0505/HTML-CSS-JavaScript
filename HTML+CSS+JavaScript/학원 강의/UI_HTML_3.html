@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <table>
+    <tr>
+      <td>회원 여부 : </td>
+      <td><input type="radio" name="member" value="회원" checked>회원</td>
+      <td><input type="radio" name="member" value="비회원" >비회원</td>
+    </tr>
+    <tr>
+      <td>취미(중복선택) : </td>
+      <td><input type="checkbox">독서</td>
+      <td><input type="checkbox">영화</td>
+      <td><input type="checkbox">음악</td>
+      <td><input type="checkbox">스포츠</td>
+    </tr>
+    <tr>
+      <td>직업 : </td>
+      <td><select id="job">
+        <option value="job">학생</option>
+        <option value="job">회사원</option>
+        <option value="job">교사</option>
+        <option value="job">자영업</option>
+        <option value="job">기타</option>
+      </td>
+    </tr>
+  </table>
+  <br>
+  <table>
+    <tr>
+      <td></td>남기고 싶은 말 :
+    </tr>
+    <tr>
+      <td><textarea name="" id="" cols="70" rows="5" placeholder="150자 내외로 글을 남겨주세요."></textarea></td>
+    </tr>
+  </table>
+  <form action="result.html" method="get">
+   <input type="reset" value="초기화">
+   <input type="submit" value="전송">
+  </form>
+</body>
+</html>

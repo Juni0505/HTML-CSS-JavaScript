@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lorem</title>
+  <!-- [1] 해상도 - 최적해상도1250px 결정 (최대/최소 마지막점검) -->
+  <!-- [2] content 영역 1040px 80vw 90%, 배치(중앙,왼쪽) -->
+  <!-- [3] reset.css 폴더경로 -->
+  <link rel="stylesheet" href="/resources/css/reset.css">
+  <!-- TODO js jQuery -->
+  <!-- [4] main(core).css 폴더경로 - bootstrap, template 등으로 대체 -->
+  <!-- [5] 기본색상 10~15개정도 class 미리 만들어두기 -->
+  <!-- [6] 폰트크기 5~7개정도 class 미리 만들어두기 -->
+  <!-- [7] button 3개 class 미리 만들어두기-->
+  <!-- [8] a 모양 미리 만들어두기 -->
+
+  <!-- [9] Layout 영역 -->
+  <style>
+    .wrap {
+      border: 1px solid black;
+      box-sizing: border-box;
+    }
+    .wrap.header{
+      background-color: bisque;
+    }
+    .wrap.content{
+      background-color: beige;
+    }
+    .wrap.footer{
+      background-color: bisque;
+    }
+    header, #content, footer{
+      /* 중앙정렬 */
+      width: 80vw;
+      margin: 0 auto;
+      border: 1px solid black;
+    }
+    #content{
+      overflow: hidden;
+    }
+    /* section */
+    section {
+      width: 80%;
+      float: left;
+    }
+    /* aside */
+    aside {
+      width: 20%;
+      float: right;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap header">
+    <header>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi temporibus eum, aperiam totam, architecto saepe distinctio, quis maiores nam sequi natus accusantium ea sit eveniet ullam! Distinctio incidunt et iure?</p>
+    </header>
+  </div>
+  <div class="wrap content">
+      <div id="content">
+        <section>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi temporibus eum, aperiam totam, architecto saepe distinctio, quis maiores nam sequi natus accusantium ea sit eveniet ullam! Distinctio incidunt et iure?</p>
+        </section>
+        <aside>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi temporibus eum, aperiam totam, architecto saepe distinctio, quis maiores nam sequi natus accusantium ea sit eveniet ullam! Distinctio incidunt et iure?</p>
+        </aside>
+      </div>
+  </div>
+  <div class="wrap footer">
+    <footer>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi temporibus eum, aperiam totam, architecto saepe distinctio, quis maiores nam sequi natus accusantium ea sit eveniet ullam! Distinctio incidunt et iure?</p>
+    </footer>
+  </div>
+  <script>
+    var a1 = document.getElementsById()
+  </script>
+</body>
+</html>

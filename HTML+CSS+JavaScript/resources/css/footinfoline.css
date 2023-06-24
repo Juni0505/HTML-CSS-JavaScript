@@ -1,0 +1,35 @@
+.footline{
+  display: inline-block;
+
+}
+.footstyle ul{
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+.info{
+  font-size: 13;
+  line-height: 5px;
+  
+}
+.last {
+  font-size: smaller;
+  line-height: 7px;
+}
+.info1{
+  display: table-cell;
+  font-size: 14px;
+}
+.info2 {
+  display: table-cell;
+  font-size: 14px;
+}
+.info3 {
+  display: table-cell;
+  font-size: 14px;
+}
+.footbanner {
+  display: block;
+  height: 50%;
+  background-size: 80%;
+}
