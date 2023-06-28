@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    
+    textarea{
+      resize: none;
+    }
+    
+    label {
+      width: 65px;
+      text-align: center
+    }
+   fieldset p {
+    display: flex;
+    align-items: center;
+
+   }
+    th {
+      text-align: center;
+      background-color: rgba(241, 133, 33, 0.83);
+      color: aliceblue;
+    }
+    td {
+      text-align: left;
+      background-color: rgba(227, 216, 136, 0.601);
+      
+    }
+    
+  </style>
+</head>
+<body>
+  <form action="insert.no" method="post">
+    <fieldset>
+      <legend>공지사항 작성하기</legend>
+      <p><label>제목</label><input type="text" size="32" name="title" placeholder="제목을 입력하시오." required></p>
+      <p><label>내용</label><textarea name="content"cols="30" rows="10" placeholder="내용을 입력하시오." required></textarea></p>
+      <p><label>첨부파일</label><input type="file" name="uploadFile"></p>
+      <button style="margin-left: 150px;">작성하기</button>
+    </fieldset>
+  </form>
+  <hr>
+  <table border="1">
+    <tr>
+      <th>
+        <p>번호</p>
+      </th>
+      <th colspan="2">
+        <p>제목</p>
+      </th>
+      <th>
+        <p>작성자</p>
+      </th>
+      <th>
+        <p>작성일</p>
+      </th>
+      <th>
+        <p>조회수</p>
+      </th>
+    </tr>
+    <tr>
+      <td>
+        <p>9</p>
+      </td>
+      <td width="65%">
+        <p>공지사항 제목9</p>
+      </td>
+      <td width="3%"><input type="submit" value="바로가기"></td>
+      <td><p>user01</p></td>
+      <td><p>2021-03-29</p></td>
+      <td><p>34</p></td>
+    </tr>
+    <tr>
+      <td><p>6</p></td>
+      <td><p>공지사항 제목 6</p></td>
+      <td><input type="submit" value="바로가기"></td>
+      <td><p>answ445</p></td>
+      <td><p>2021-03-12</p></td>
+      <td><p>67</p></td>
+    </tr>
+    <tr>
+      <td><p>3</p></td>
+      <td><p>공지사항 제목 3</p></td>
+      <td><input type="submit" value="바로가기"></td>
+      <td><p>testg12</p></td>
+      <td><p>2021-03-01</p></td>
+      <td><p>98</p></td>
+  </tr>
+  <tr>
+    <td><p>2</p></td>
+    <td><p>공지사항 제목 2</p></td>
+    <td><input type="submit" value="바로가기"></td>
+    <td><p>palwe3</p></td>
+    <td><p>2021-01-02</p></td>
+    <td><p>85</p></td>
+  </tr>
+  <tr>
+    <td><p>1</p></td>
+    <td><p>공지사항 제목 1</p></td>
+    <td><input type="submit" value="바로가기"></td>
+    <td><p>xml23</p></td>
+    <td><p>2020-12-24</p></td>
+    <td><p>124</p></td>
+  </tr>
+  <tr>
+    <th colspan="4">전체공지사항 갯수</th>
+    <th colspan="2">5개</th>
+  </tr>
+  </table>
+</body>
+</html>
