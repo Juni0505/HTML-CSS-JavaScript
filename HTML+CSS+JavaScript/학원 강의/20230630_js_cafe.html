@@ -20,14 +20,39 @@
 
     // 각종 기능 함수들
     function cntBlurHandler(event) {
-      console.log(this);
-      console.log(event.target); // event.target == this
-      console.log(event);
+      // console.log(this);
+      // console.log(event.target); // event.target == this
+      // console.log(event);
+      // console.log($(this).parent().prev().text())
+      console.log($(this).val());
+      $(this).parent().next().children('input.p').val(
+        $(this).parent().prev().text()
+        *
+        $(this).val()
+      );
+      var sum = 0;
+      //합계
+      $(".c").each(function(idx, item){
+        // item == this
+        console.log(this);
+        sum += $(this).val();
+      })
+      $("cTotalCnt").val();
+      $("cTotalPrice").val();
+
     }
-    function calcClickHandler(event){
+    function calcClickHandler(e){
+      // console.log(this);
+      // console.log(event.target);  // event.target == this
+      // console.log(event);
+    }
+    var globalValuesSum = 0;
+    function cTotalCntHandler(idx){
+      //console.log(price);
+      // item = this
       console.log(this);
-      console.log(event.target);  // event.target == this
-      console.log(event);
+      globalValuesSum += $(this).val();
+
     }
   </script>
 </head>
@@ -39,7 +64,7 @@
         <th>메뉴</th>
         <th>가격</th>
         <th>수량</th>
-        <th>합격</th>
+        <th>합계</th>
       </tr>
       <tr>
         <td>아메리카노</td>
@@ -50,8 +75,8 @@
       <tr>
         <td>라떼</td>
         <td>3000</td>
-        <td><input type="text" name="cTotalCnt" id="cTotalCnt" class="c"></td>
-        <td><input type="text" name="cTotalPrice" id="c2Price" class="p" readonly></td>
+        <td><input type="text" name="c2" id="c2" class="c"></td>
+        <td><input type="text" name="c2Price" id="c2Price" class="p" readonly></td>
       </tr>
       <tr>
         <td>생강라떼</td>
