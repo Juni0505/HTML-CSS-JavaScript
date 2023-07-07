@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원가입</title>
+  <style>
+    body {
+      background-color: rgb(224, 234, 245);
+      display: flex;
+      justify-content: center;
+    }
+    table {
+      display: inline-block;
+      background-color: rgb(237, 237, 237);
+      padding: 5px;
+      margin: 50px;
+      text-align: left;
+      border: 1px solid rgb(213, 218, 223);
+      
+    }
+    input {
+      border: none;
+      background-color: rgb(237, 237, 237);
+      border-bottom: 1px dashed black;
+    }
+    button {
+      background-color: rgb(202, 223, 185);
+    }
+    .hide1 {
+      display: none;
+    }
+    .hide2 {
+      display: none;
+    }
+    .hide3 {
+      display: none;
+    }
+    /* .show {
+      display: block;
+      font-size: 12px;
+      font-weight: bold;
+    } */
+    .focushide {
+      display: none;
+    }
+  </style>
+  
+</head>
+<body>
+  <table>
+    <tr>
+      <td class="cnt1">
+        <p>아이디</p>
+      </td>
+      <td>
+        <input type="text" size="30px" id="mid" required>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      </td>
+      <td  class="hide1" style="font-weight: bold; font-size: 12px;">
+        필수 입력 항목입니다
+      </td>
+    </tr>
+    <tr>
+      <td class="cnt1">
+        <p>패스워드</p>
+      </td>
+      <td>
+        <input type="text" size="30px" id="mpwd" required>
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td class="hide2" style="font-weight: bold; font-size: 12px;">
+        필수 입력 항목입니다
+      </td>
+    </tr>
+    <tr>
+      <td>
+      </td>
+      <td class="focushide" style="font-size: 10px;">
+        영문자 대/소문자 특수문자, 숫자 포함 8 ~ 32자
+      </td>
+    </tr>
+    <tr>
+      <td class="cnt1">
+        <p>패스워드 확인</p>
+      </td>
+      <td>
+        <input type="text" size="30px" id="mpwdc" required>
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td class="hide3" style="font-weight: bold; font-size: 12px;">
+        필수 입력 항목입니다
+      </td>
+    </tr>
+    <tr>
+      <td class="cnt1">
+        <p>이메일</p>
+      </td>
+      <td>
+        <input type="text" size="13px">
+        @
+        <input type="text" size="13px">
+      </td>
+    </tr>
+    <tr>
+      <td class="cnt1">
+        <p>주소</p>
+      </td>
+      <td>
+        <input type="text" size="30px">
+      </td>
+    </tr>
+    <tr>
+      <td>
+      </td>
+      <td>
+        <input type="text" size="30px">
+      </td>
+    </tr>
+    <!-- <tr>
+      <td>
+      </td>
+      <td class="hint" style="font-size: 20px;">
+        <p>필수 입력 항목입니다</p>
+      </td>
+    </tr> -->
+    <tr>
+      <td colspan="2">
+        <button style="width: 100%; height: 50px;">가입</button>
+      </td>
+    </tr>
+  </table>
+  <script>
+    var foc = document.querySelector(".focushide");
+    document.querySelector("#mpwd").addEventListener("focus", function(){
+      foc.style.display = "block";
+    });
+    
+    var foc1 = document.querySelector(".hide1");
+    document.querySelector("#mid").addEventListener("blur", function(){
+      foc1.style.display = "block";
+      
+    });
+    var foc2 = document.querySelector(".hide2");
+    document.querySelector("#mpwd").addEventListener("blur", function(){
+      foc2.style.display = "block";
+      
+    });
+    var foc3 = document.querySelector(".hide3");
+    document.querySelector("#mpwdc").addEventListener("blur", function(){
+      foc3.style.display = "block";
+      
+    });
+    
+    
+  </script>
+</body>
+
+</html>
